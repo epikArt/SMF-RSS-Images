@@ -1,0 +1,5 @@
+[center][b]RSS Images[/b][/center]
+
+Мод добавляет изображения из сообщений в rss ленту.
+Автор мода: [url=http://mysmf.ru]digger[/url] © 2016-2017
+Лицензия: The MIT License (MIT) [url]https://opensource.org/licenses/MIT[/url]

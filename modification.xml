@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification">
+
+    <id>digger:rss_images</id>
+    <name>RSS Images</name>
+    <type>modification</type>
+    <version>1.0</version>
+
+    <file name="$sourcedir/News.php">
+
+        <operation>
+            <search position="after" whitespace="loose">
+                <![CDATA[		// Being news, this actually makes sense in rss format.]]></search>
+            <add><![CDATA[		call_integration_hook('integrate_rss_description', array($row['id_msg'], &$row['body']));
+            ]]></add>
+        </operation>
+
+        <operation>
+            <search position="after" whitespace="loose">
+                <![CDATA[		// Doesn't work as well as news, but it kinda does..]]></search>
+            <add><![CDATA[		call_integration_hook('integrate_rss_description', array($row['id_msg'], &$row['body']));
+            ]]></add>
+        </operation>
+
+    </file>
+
+</modification>

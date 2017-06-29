@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info">
+
+    <id>digger:rss_images</id>
+    <name>RSS Images</name>
+    <type>modification</type>
+    <version>1.0</version>
+
+    <install for="2.0 - 2.0.99">
+        <readme type="file" parsebbc="true">readme/english.txt</readme>
+        <readme type="file" parsebbc="true" lang="english-utf8">readme/english-utf8.txt</readme>
+        <readme type="file" parsebbc="true" lang="russian">readme/russian.txt</readme>
+        <readme type="file" parsebbc="true" lang="russian-utf8">readme/russian-utf8.txt</readme>
+        <require-dir name="Sources" destination="$boarddir"/>
+        <require-dir name="Themes" destination="$boarddir"/>
+        <modification>modification.xml</modification>
+        <database>add_settings.php</database>
+        <database>hooks.php</database>
+        <redirect url="?action=admin;area=modsettings;sa=rss_images"/>
+    </install>
+
+    <uninstall for="2.0 - 2.0.99">
+        <remove-file name="$sourcedir/Mod-RssImages.php"/>
+        <remove-dir name="$languagedir/RssImages"/>
+        <modification reverse="true">install.xml</modification>
+        <database>hooks.php</database>
+    </uninstall>
+
+</package-info>
