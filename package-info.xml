@@ -5,7 +5,7 @@
     <id>digger:rss_images</id>
     <name>RSS Images</name>
     <type>modification</type>
-    <version>1.0</version>
+    <version>1.0.1</version>
 
     <install for="2.0 - 2.0.99">
         <readme type="file" parsebbc="true">readme/english.txt</readme>
@@ -23,7 +23,7 @@
     <uninstall for="2.0 - 2.0.99">
         <remove-file name="$sourcedir/Mod-RssImages.php"/>
         <remove-dir name="$languagedir/RssImages"/>
-        <modification reverse="true">install.xml</modification>
+        <modification reverse="true">modification.xml</modification>
         <database>hooks.php</database>
     </uninstall>
 
