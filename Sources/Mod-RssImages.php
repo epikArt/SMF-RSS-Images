@@ -29,7 +29,7 @@ function loadRssImagesHooks()
 function addRssImagesAdminArea(&$admin_areas)
 {
     global $txt;
-    loadLanguage('RssImages/');
+    loadLanguage('RssImages/RssImages');
 
     $admin_areas['config']['areas']['modsettings']['subsections']['rss_images'] = array($txt['rss_images']);
 }
@@ -50,7 +50,7 @@ function addRssImagesAdminAction(&$subActions)
 function addRssImagesAdminSettings($return_config = false)
 {
     global $txt, $scripturl, $context;
-    loadLanguage('RssImages/');
+    loadLanguage('RssImages/RssImages');
 
     $context['page_title'] = $txt['rss_images'];
     $context['post_url'] = $scripturl . '?action=admin;area=modsettings;save;sa=rss_images';
