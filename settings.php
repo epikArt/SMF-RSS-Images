@@ -1,7 +1,7 @@
 <?php
 /**
  * @package RSS Images
- * @author digger http://mysmf.ru
+ * @author digger http://mysmf.net
  * @copyright 2016-2017
  * @license The MIT License (MIT) https://opensource.org/licenses/MIT
  * @version 1.0

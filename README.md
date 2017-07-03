@@ -1,5 +1,5 @@
 # SMF RSS Images mod
-* **Author:** digger [http://mysmf.ru](http://mysmf.ru)
+* **Author:** digger [http://mysmf.net](http://mysmf.net)
 * **License:** The MIT License (MIT) https://opensource.org/licenses/MIT
 * **Compatible with:** SMF 2.0
 * **Languages:** English, Russian

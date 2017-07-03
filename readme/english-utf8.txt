@@ -1,5 +1,5 @@
 [center][b]RSS Images[/b][/center]
 
 Mod adds images from messages to rss.
-Mod author: [url=http://mysmf.ru]digger[/url] © 2016-2017
+Mod author: [url=http://mysmf.net]digger[/url] © 2016-2017
 License: The MIT License (MIT) [url]https://opensource.org/licenses/MIT[/url]

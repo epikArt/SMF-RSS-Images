@@ -5,7 +5,7 @@
     <id>digger:rss_images</id>
     <name>RSS Images</name>
     <type>modification</type>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 
     <install for="2.0 - 2.0.99">
         <readme type="file" parsebbc="true">readme/english.txt</readme>
@@ -15,7 +15,7 @@
         <require-dir name="Sources" destination="$boarddir"/>
         <require-dir name="Themes" destination="$boarddir"/>
         <modification>modification.xml</modification>
-        <database>add_settings.php</database>
+        <database>settings.php</database>
         <database>hooks.php</database>
         <redirect url="?action=admin;area=modsettings;sa=rss_images"/>
     </install>

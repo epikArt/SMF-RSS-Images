@@ -1,7 +1,7 @@
 <?php
 /**
  * @package RSS Images
- * @author digger http://mysmf.ru
+ * @author digger http://mysmf.net
  * @copyright 2016-2017
  * @license The MIT License (MIT) https://opensource.org/licenses/MIT
  * @version 1.0
@@ -44,6 +44,7 @@ function addRssImagesAdminAction(&$subActions)
 }
 
 /**
+ * Addmin area settings
  * @param bool $return_config
  * @return array config vars
  */
@@ -113,7 +114,7 @@ function addRssImagesToDescription($id_msg = 0, &$description = '')
 
     preg_match('/\[img.*](.+)\[\/img]/i', $body, $image);
     if (!empty($image[1])) {
-        $image = '<img alt="" src="' . trim($image[1]) . '" /></img></br>';
+        $image = '<img alt="" src="' . trim($image[1]) . '" /></br>';
     }
 
     if (!empty($image)) {
@@ -130,6 +131,6 @@ function addRssImagesCopyright()
     global $context;
 
     if ($context['current_action'] == 'credits') {
-        $context['copyrights']['mods'][] = '<a href="http://mysmf.ru/mods/rss-images" title="SMF RSS Images Mod" target="_blank">RSS Images</a> &copy; 2016-2017, digger';
+        $context['copyrights']['mods'][] = '<a href="http://mysmf.net/mods/rss-images" title="SMF RSS Images Mod" target="_blank">RSS Images</a> &copy; 2016-2017, digger';
     }
 }
