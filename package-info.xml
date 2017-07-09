@@ -5,7 +5,7 @@
     <id>digger:rss_images</id>
     <name>RSS Images</name>
     <type>modification</type>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
 
     <install for="2.0 - 2.0.99">
         <readme type="file" parsebbc="true">readme/english.txt</readme>

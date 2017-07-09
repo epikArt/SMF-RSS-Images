@@ -4,7 +4,7 @@
  * @author digger http://mysmf.net
  * @copyright 2016-2017
  * @license The MIT License (MIT) https://opensource.org/licenses/MIT
- * @version 1.0
+ * @version 1.0.3
  */
 
 if (!defined('SMF')) {
@@ -114,7 +114,7 @@ function addRssImagesToDescription($id_msg = 0, &$description = '')
 
     preg_match('/\[img.*](.+)\[\/img]/i', $body, $image);
     if (!empty($image[1])) {
-        $image = '<img alt="" src="' . trim($image[1]) . '" /></br>';
+        $image = '<img alt="" src="' . trim($image[1]) . '" /><br />';
     }
 
     if (!empty($image)) {
